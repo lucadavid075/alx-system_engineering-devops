@@ -1,3 +1,4 @@
+# Creating /tmp/school file"
 $filepath = '/tmp/school'
 
 file { $filepath:
