@@ -1,11 +1,11 @@
 # modify SSH config file
-file_line { 'password authentication':
+file { 'Turn off passwd auth':
   ensure => 'present',
-  path   => '~/etc/ssh/ssh_config',
-  line   => 'PasswordAuthentication no'
+  path   => '/etc/ssh/ssh_config',
+  line   => '    PasswordAuthentication no'
 }
-file_line { 'Identity file':
+file { 'Declare identity file':
   ensure => 'present',
-  path   => '~/etc/ssh/ssh_config',
-  line   => 'IdentityFile ~/.ssh/school'
+  path   => '/etc/ssh/ssh_config',
+  line   => '    IdentityFile ~/.ssh/school'
 }
