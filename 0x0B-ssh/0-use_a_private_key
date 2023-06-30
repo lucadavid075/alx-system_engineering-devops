@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 # connect to a server using ssh
-ssh -i ~/.ssh/school ubuntu@35.172.121.214
+# server1: 18.233.66.178
+# server2: 52.87.220.139
+# loadbalancer: 54.234.61.145
+ssh -i ~/.ssh/school ubuntu@18.233.66.178
